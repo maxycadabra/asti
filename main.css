@@ -1,11 +1,20 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, #f1f2f6, #ffffff);
-    padding: 30px;
     box-shadow: 0 5px 5px rgb(168, 167, 167);
     position: relative;
+}
+.header__name {
+    font-family: 'Ms Madi', cursive, sans-serif;
+    font-size: 50px;
+    margin: 5px 0px 5px 20px; 
+    font-weight: 100;
 }
 header input {
     border-radius: 50px;
@@ -14,16 +23,21 @@ header input {
     width: 200px;
     transition: 1s linear;
     box-shadow: 3px 3px 10px rgb(190, 189, 189);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
 }
 header input:focus {
     outline: none;
-    box-shadow: 0.5px 0.5px 5px rgb(224, 49, 49)
-}
-header input:hover {
+    box-shadow: 0.5px 0.5px 5px rgb(224, 49, 49);
     width: 400px;
     transition: 1s linear;
     position:relative;
     margin-left: 200px;
+}
+header input:hover {
+    outline: none;
+    box-shadow: 0.5px 0.5px 5px rgb(224, 49, 49);
 }
 .field {
     display: flex;
@@ -33,7 +47,7 @@ header input:hover {
     background: linear-gradient(to bottom, #f1f2f6, #ffffff);
     width: 10%;
     height: 600px;
-    box-shadow: 5px 0 5px rgb(168, 167, 167)
+    box-shadow: 5px 0 5px rgb(168, 167, 167);
 }
 .info {
     width: 90%;
@@ -54,17 +68,25 @@ header input:hover {
 	position: absolute;
 	background-color:rgb(255, 255, 255, .7);
 }
-button {
+.field button {
     margin: 15px 15px 0 15px;
     width: 100px;
     height: 100px;
     background: #f1f2f6;
     box-shadow: 5px 5px 10px rgb(168, 167, 167);
     border: none;
-    border-radius: 10px;;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-weight: 600; 
+    transition: linear 0.3s;  
 }
-button:hover {
-    box-shadow: 0.5px 0.5px 8px rgb(224, 49, 49); 
+.field button:hover {
+    box-shadow: 0.5px 0.5px 8px rgb(224, 49, 49);
+    cursor: pointer; 
+    transition: all 0.2s;
+    color: #f1f2f6;
+    background:black; 
+    transition: linear 0.3s;
 }
 .princess img{
     width: 300px;
@@ -78,6 +100,88 @@ button:hover {
     border-radius: 15px;
     position: relative; 
 }
+.fa-image {
+    font-size: 30px;
+    opacity: 0.8;
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+.fa-film {
+    font-size: 30px;
+    opacity: 0.8;
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+.fa-file-pen {
+    font-size: 30px;
+    opacity: 0.8;
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+.fa-cat{
+    font-size: 30px;
+    opacity: 0.8;
+}
+footer {
+    padding: 20px 20px 40px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background: linear-gradient(to bottom right, white 10%, black );
+}
+.footer__company {
+    text-align: center;
+    margin-top: 40px;
+}
+.footer__container{
+    display: flex;
+    justify-content: flex-start;
+}
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+.footer__links { 
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+.footer__group {
+    margin-right: 100px;
+}
+.footer__info div {
+    margin-bottom: 10px;
+    color: black;
+    transition: linear 0.3s;
+}
+.footer__links a {
+    margin-right: 15px;
+    color: black;
+    transition: linear 0.3s;
+}
+.fa-location-dot {
+    font-size: 15px;
+    color: rgb(224, 49, 49);
+}
+.footer__info a {
+    text-decoration: none;
+}
+.footer__links a:hover {
+    font-size: 150%;
+    transition: linear 0.3s;
+    color: rgb(224, 49, 49);
+}
+.footer__group h3 {
+    font-weight: bold;
+}
+.footer__info div:hover {
+    color: rgb(224, 49, 49);
+    transition: linear 0.3s;
+}
+
+
+
+
 
 
 
