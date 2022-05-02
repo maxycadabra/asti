@@ -126,12 +126,15 @@ footer {
     padding: 20px 20px 40px 40px;
     font-size: 16px;
     font-weight: 600;
-    color: black;
-    background: linear-gradient(to bottom right, white 10%, black );
+    color: rgb(190, 189, 189);
+    background: linear-gradient(to top left, #f1f2f6 10%, black );
 }
 .footer__company {
-    text-align: center;
-    margin-top: 40px;
+    text-align: right;
+    margin-top: 80px;
+    color: black;
+    margin-right: 40px;
+    font-weight: bold;
 }
 .footer__container{
     display: flex;
@@ -151,12 +154,12 @@ footer {
 }
 .footer__info div {
     margin-bottom: 10px;
-    color: black;
+    color: rgb(190, 189, 189);
     transition: linear 0.3s;
 }
 .footer__links a {
     margin-right: 15px;
-    color: black;
+    color: rgb(190, 189, 189);
     transition: linear 0.3s;
 }
 .fa-location-dot {
@@ -173,6 +176,7 @@ footer {
 }
 .footer__group h3 {
     font-weight: bold;
+    font-size: 20px;
 }
 .footer__info div:hover {
     color: rgb(224, 49, 49);
