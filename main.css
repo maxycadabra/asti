@@ -9,6 +9,7 @@ header {
     background: linear-gradient(to right, #f1f2f6, #ffffff);
     box-shadow: 0 5px 5px rgb(168, 167, 167);
     position: relative;
+    z-index: 2;
 }
 .header__name {
     font-family: 'Ms Madi', cursive, sans-serif;
@@ -29,7 +30,7 @@ header input {
 }
 header input:focus {
     outline: none;
-    box-shadow: 0.5px 0.5px 5px rgb(224, 49, 49);
+    box-shadow: 0.5px 0.5px 5px rgba(111, 30, 81);
     width: 400px;
     transition: 1s linear;
     position:relative;
@@ -37,7 +38,7 @@ header input:focus {
 }
 header input:hover {
     outline: none;
-    box-shadow: 0.5px 0.5px 5px rgb(224, 49, 49);
+    box-shadow: 0.5px 0.5px 5px rgba(111, 30, 81);
 }
 .field {
     display: flex;
@@ -48,6 +49,7 @@ header input:hover {
     width: 10%;
     height: 600px;
     box-shadow: 5px 0 5px rgb(168, 167, 167);
+    z-index: 1;
 }
 .info {
     width: 90%;
@@ -81,11 +83,10 @@ header input:hover {
     transition: linear 0.3s;  
 }
 .field button:hover {
-    box-shadow: 0.5px 0.5px 8px rgb(224, 49, 49);
+    box-shadow: 0.5px 0.5px 8px rgba(111, 30, 81);
     cursor: pointer; 
     transition: all 0.2s;
-    color: #f1f2f6;
-    background:black; 
+    color: rgba(111, 30, 81); 
     transition: linear 0.3s;
 }
 .princess img{
@@ -164,7 +165,7 @@ footer {
 }
 .fa-location-dot {
     font-size: 15px;
-    color: rgb(224, 49, 49);
+    color: rgb(190, 189, 189);
 }
 .footer__info a {
     text-decoration: none;
@@ -172,15 +173,25 @@ footer {
 .footer__links a:hover {
     font-size: 150%;
     transition: linear 0.3s;
-    color: rgb(224, 49, 49);
+    color: rgb(190, 189, 189);
+    text-shadow: 2px 2px 10px rgba(111, 30, 81,1.0),
+                 -2px -2px 10px rgba(111, 30, 81,1.0),
+                 2px -2px 10px rgba(111, 30, 81,1.0),
+                 -2px 2px 10px rgba(111, 30, 81,1.0);
 }
 .footer__group h3 {
     font-weight: bold;
     font-size: 20px;
 }
 .footer__info div:hover {
-    color: rgb(224, 49, 49);
+    color: rgb(190, 189, 189);
     transition: linear 0.3s;
+    text-shadow: 2px 2px 2px rgba(111, 30, 81,1.0),
+                 -2px -2px 2px rgba(111, 30, 81,1.0),
+                 2px -2px 2px rgba(111, 30, 81,1.0),
+                 -2px 2px 2px rgba(111, 30, 81,1.0);
+                
+                 
 }
 
 
